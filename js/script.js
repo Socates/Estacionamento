@@ -3,9 +3,9 @@ const fetchParkingData = () => {
     return new Promise((resolve) => {
         setTimeout(() => {
             resolve({
-                nome: "Estacionamento VIP",
+                nome: "Estacionamento Subsolo",
                 lat: -22.853977077871345,
-                lng: -47.0985762437773,
+                lng: -47.0985762437773
             });
         }, 1500);
     });
@@ -37,4 +37,5 @@ const renderCard = async () => {
 // Inicializa a aplicação
 
 renderCard();
+
 
