@@ -1,0 +1,67 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000; /* Fundo Preto */
+    font-family: 'Inter', -apple-system, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+.container {
+    text-align: center;
+}
+
+.welcome-msg {
+    font-size: 1.2rem;
+    color: #888;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.card {
+    background: #111; /* Cinza quase preto para o card */
+    border: 1px solid #333;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 255, 127, 0.1);
+    min-width: 320px;
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+.btn-go {
+    background-color: #00ff7f; /* Verde neon para contraste */
+    color: #000;
+    border: none;
+    padding: 15px 45px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.btn-go:hover {
+    background-color: #00cc66;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 255, 127, 0.4);
+}
+
+.loader {
+    color: #555;
+    font-style: italic;
+}
