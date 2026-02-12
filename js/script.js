@@ -4,8 +4,8 @@ const fetchParkingData = () => {
         setTimeout(() => {
             resolve({
                 nome: "Estacionamento Subsolo",
-                lat: -22.853977077871345,
-                lng: -47.0985762437773
+                lat: -22.85397,
+                lng: -47.09857
             });
         }, 1500);
     });
@@ -25,7 +25,9 @@ const renderCard = async () => {
 
         // Evento de clique para o Google Maps
         document.getElementById('btnSiga').addEventListener('click', () => {
-            const url = `https://www.google.com/maps/dir/?api=1&destination=${data.lat},${data.lng}`;
+            //const url = `https://www.google.com/maps/dir/?api=1&destination=${data.lat},${data.lng}`;
+            const url = ` https://maps.app.goo.gl/yJN4cfMQLPFqoPRbA`;
+           
             window.open(url, '_blank');
         });
 
@@ -37,5 +39,6 @@ const renderCard = async () => {
 // Inicializa a aplicação
 
 renderCard();
+
 
 
