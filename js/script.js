@@ -4,8 +4,8 @@ const fetchParkingData = () => {
         setTimeout(() => {
             resolve({
                 nome: "Estacionamento VIP",
-                lat: -23.550520,
-                lng: -46.633308
+                lat: -22.85399323408991,
+                lng: -47.09860403211776,
             });
         }, 1500);
     });
@@ -35,4 +35,5 @@ const renderCard = async () => {
 };
 
 // Inicializa a aplicação
+
 renderCard();
